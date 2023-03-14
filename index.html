@@ -49,8 +49,22 @@ Bonus
 Al click su un disco, recuperare e mostrare i dati del disco selezionato. -->
 
 <body>
-
-
+    <div id="root">
+        <div class="container">
+            <h1>Disc List</h1>
+            <div class="row">
+                <div v-for="disc in discList" class="col">
+                    <div class="card">
+                        <img :src="disc.poster" alt="poster">
+                        <h3>{{ disc.title }}</h3>
+                        <span>{{ disc.author }}</span>
+                        <span>{{ disc.year }}</span>
+                        <span>{{ disc.genre }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- BOOTSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
