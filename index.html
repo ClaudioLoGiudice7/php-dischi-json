@@ -56,10 +56,10 @@ Al click su un disco, recuperare e mostrare i dati del disco selezionato. -->
                 <div v-for="disc in discList" class="col-4">
                     <div class="card">
                         <img :src="disc.poster" class="w-100" alt="poster">
-                        <h3>{{ disc.title }}</h3>
-                        <span>{{ disc.author }}</span>
-                        <span>{{ disc.year }}</span>
-                        <span>{{ disc.genre }}</span>
+                        <h3 class="fs-4">{{ disc.title }}</h3>
+                        <h6 class="fs-14">{{ disc.author }}</h6>
+                        <h6 class="fs-14">{{ disc.year }}</h6>
+                        <h6 class="fs-14">{{ disc.genre }}</h6>
                     </div>
                 </div>
             </div>
