@@ -48,4 +48,4 @@ const app = Vue.createApp({
         }
     }
 });
-app.mount("root")
+app.mount("#root")

@@ -53,9 +53,9 @@ Al click su un disco, recuperare e mostrare i dati del disco selezionato. -->
         <div class="container">
             <h1>Disc List</h1>
             <div class="row">
-                <div v-for="disc in discList" class="col">
+                <div v-for="disc in discList" class="col-4">
                     <div class="card">
-                        <img :src="disc.poster" alt="poster">
+                        <img :src="disc.poster" class="w-100" alt="poster">
                         <h3>{{ disc.title }}</h3>
                         <span>{{ disc.author }}</span>
                         <span>{{ disc.year }}</span>
