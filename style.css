@@ -2,14 +2,58 @@ header {
     background-color: #06131f;
 }
 
+h1>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1>a:hover {
+    color: #fff;
+}
+
 body {
     background-color: #1d2d3c;
 }
 
 .container>.row>.col-4>.card {
     background-color: #112030;
+    cursor: pointer;
 }
 
-.fs-14 {
-    font-size: 14px;
+.singleCard {
+    background-color: #112030;
+    width: 100vw;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    background-color: rgba(17, 32, 48, 0.7);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #112030;
+    max-width: 80%;
+    padding: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.w-35 {
+    width: 35%;
 }
